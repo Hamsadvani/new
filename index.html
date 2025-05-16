@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamsadvani • Generative AI for Work & Research Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Pastel accent */
+      --primary:#a5b4fc;          /* pastel periwinkle */
+      --primary-dark:#818cf8;
+      --bg:#f6f5f3;              /* light cream background */
+      --card-bg:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;line-height:1.6;color:#333;background:var(--bg);scroll-behavior:smooth;}
+
+    /* Typography */
+    h1,h2,h3{font-family:"Playfair Display", serif;color:#111;}
+    h1{font-size:2.75rem;line-height:1.15;}
+    h2{font-size:2.25rem;margin-bottom:.5rem;}
+    h3{font-size:1.25rem;}
+
+    /* Navigation */
+    nav{background:var(--primary);color:#fff;display:flex;justify-content:center;gap:1rem;padding:.6rem 0;position:sticky;top:0;z-index:1000;}
+    nav a{color:#fff;text-decoration:none;font-weight:600;}
+    nav a:hover,nav a:focus{opacity:.9;}
+
+    /* Hero Section */
+    .hero{display:flex;flex-direction:column;align-items:center;gap:2rem;padding:4rem 1rem;background:var(--bg);max-width:1200px;margin:0 auto;}
+    .hero-img{width:100%;max-width:420px;border-radius:10px;object-fit:cover;box-shadow:0 4px 8px rgba(0,0,0,0.08);}  
+    .hero-content{max-width:640px;text-align:center;}
+    .hero-content p{color:#555;margin:.5rem 0 1.5rem;}
+    .btn-primary{display:inline-block;background:#000;color:#fff;padding:.75rem 1.75rem;font-weight:600;border:none;border-radius:4px;text-decoration:none;transition:opacity .2s ease;}
+    .btn-primary:hover{opacity:.85;}
+
+    /* Sections */
+    section{max-width:900px;margin:3.5rem auto;padding:0 1rem;}
+    .about-me p{margin:.65rem 0;}
+    .skills-list{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem;}
+    .skills-list span{background:#e0e7ff;border-radius:4px;padding:.25rem .5rem;font-size:.875rem;}
+    .career-list{margin:.75rem 0 0 1.2rem;}
+    .career-list li{margin:.3rem 0;}
+
+    /* Course Modules */
+    .course-module{background:var(--card-bg);border-radius:8px;padding:1rem;margin:.75rem 0;box-shadow:0 1px 3px rgba(0,0,0,0.06);}  
+    .module-title{font-weight:600;}
+
+    /* Submissions */
+    .submissions-list{list-style:none;padding-left:0;}
+    .submissions-list li{background:var(--card-bg);padding:.75rem 1rem;border-radius:6px;margin:.5rem 0;box-shadow:0 1px 2px rgba(0,0,0,0.05);}  
+    .submissions-list li span{display:inline-block;width:5rem;font-weight:600;}
+
+    footer{text-align:center;padding:2rem 1rem;font-size:.875rem;color:#666;}
+
+    /* Responsive */
+    @media(min-width:800px){
+      .hero{flex-direction:row;justify-content:space-between;align-items:center;padding:6rem 2rem;}
+      .hero-content{text-align:left;}
+      h1{font-size:3.25rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav aria-label="Primary">
+    <a href="#about-me">About&nbsp;Me</a>
+    <a href="#about-course">About&nbsp;the&nbsp;Course</a>
+    <a href="#submissions">Weekly&nbsp;Submissions</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://via.placeholder.com/420x520?text=Your+Photo" alt="Photo of Hamsadvani" class="hero-img">
+    <div class="hero-content">
+      <h1>Hamsadvani Anand Kuganantham</h1>
+      <p>Medical Doctor • Global Health &amp; Policy Expert • Aspiring Generative&nbsp;AI&nbsp;Practitioner</p>
+      <a href="#about-me" class="btn-primary">Learn more</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about-me" class="about-me">
+    <h2>About Me</h2>
+    <p>I am a physician‑researcher with over 15&nbsp;years of international experience spanning the World Health Organization, the University of Oxford, and UNICEF. My work focuses on health systems strengthening, clinical research governance, and equitable access to medicines across the Global South.</p>
+    <p>After completing an MSc in Health Policy, Planning &amp; Financing at the <abbr title="London School of Hygiene &amp; Tropical Medicine">LSHTM</abbr> and the London School of Economics, I have led multidisciplinary teams, coordinated high‑impact research agendas, and advised governments on pandemic preparedness and universal health coverage.</p>
+    <p>Today I am expanding my toolkit by integrating <strong>Generative AI</strong> into research workflows—from automated data analysis to custom chatbots—to accelerate evidence generation and policy translation.</p>
+    <ul class="career-list">
+      <li><strong>Global Research Manager</strong>, University of Oxford – Pathogen‑variant projects across Africa &amp; Asia (2024‑present)</li>
+      <li><strong>Technical Officer, Research for Health</strong>, WHO Geneva – R&amp;D prioritization and landscape analyses (2022‑23)</li>
+      <li><strong>Health Systems Consultant</strong>, WHO India – Essential medicines &amp; vaccine access (2014‑16)</li>
+      <li><strong>Global Pricing &amp; Market Access Analyst</strong>, Novartis (2011‑14)</li>
+    </ul>
+    <div class="skills-list">
+      <span>Global Health</span><span>Research Management</span><span>Policy Analysis</span><span>Data Visualization</span><span>Generative&nbsp;AI</span><span>Project Leadership</span>
+    </div>
+    <p style="margin-top:1rem;"><a href="https://www.linkedin.com/in/hamsadvani" target="_blank" rel="noopener">LinkedIn&nbsp;Profile</a></p>
+  </section>
+
+  <!-- About Course -->
+  <section id="about-course">
+    <h2>About the Course</h2>
+    <p><em>Generative AI for Work &amp; Research Productivity</em> is an 8‑week live online certification that equips students, faculty and researchers with no‑code AI tools to automate everyday tasks and unlock new insights.</p>
+    <ul>
+      <li><strong>Next cohort:</strong> <time datetime="2025-07-13">13&nbsp;July&nbsp;2025</time></li>
+      <li><strong>Workshops:</strong> Fridays 15:00 GMT or Sundays 17:00 GMT (choose one)</li>
+      <li><strong>Tuition:</strong> USD&nbsp;250&nbsp;per&nbsp;month &times; 2&nbsp;months &nbsp;— 1‑month refund guarantee</li>
+    </ul>
+
+    <h3>Key Learning Outcomes</h3>
+    <div class="course-module">
+      <div class="module-title">Documents, Presentations &amp; Websites</div>
+      <p>Create publication‑ready content with LLMs and build no‑code websites.</p>
+    </div>
+    <div class="course-module">
+      <div class="module-title">Automated Data Analysis</div>
+      <p>Use Julius, ChatGPT Code Interpreter and Windsurf to turn raw datasets into actionable reports.</p>
+    </div>
+    <div class="course-module">
+      <div class="module-title">GenAI for Research &amp; Text Analysis</div>
+      <p>Streamline literature reviews, sentiment analysis and knowledge synthesis with Elicit &amp; LiteRev.</p>
+    </div>
+    <div class="course-module">
+      <div class="module-title">Custom GPTs &amp; Chatbots</div>
+      <p>Design RAG‑powered assistants and integrate them via APIs or Botpress workflows.</p>
+    </div>
+    <div class="course-module">
+      <div class="module-title">AI Workflows for Task Automation</div>
+      <p>Reclaim hours by orchestrating cross‑platform automations using Lindy and Make.com.</p>
+    </div>
+    <div class="course-module">
+      <div class="module-title">Communication &amp; Outreach</div>
+      <p>Generate visuals, videos and marketing assets to share research findings.</p>
+    </div>
+    <div class="course-module">
+      <div class="module-title">Capstone Project &amp; Showcase</div>
+      <p>Deliver an end‑to‑end AI solution and present it to peers for feedback.</p>
+    </div>
+  </section>
+
+  <!-- Submissions -->
+  <section id="submissions">
+    <h2>Weekly Submissions</h2>
+    <p>Links will appear here as the course progresses.</p>
+    <ol class="submissions-list">
+      <li><span>Week&nbsp;1:</span> <a href="#" title="Coming soon">Prompt Engineering Basics</a></li>
+      <li><span>Week&nbsp;2:</span> <a href="#" title="Coming soon">Automated Literature Review</a></li>
+      <li><span>Week&nbsp;3:</span> <a href="#" title="Coming soon">Data Visualization Pipeline</a></li>
+      <li><span>Week&nbsp;4:</span> <a href="#" title="Coming soon">Custom GPT Assistant</a></li>
+      <li><span>Week&nbsp;5:</span> <a href="#" title="Coming soon">Workflow Automation</a></li>
+      <li><span>Week&nbsp;6:</span> <a href="#" title="Coming soon">Multimodal Presentation</a></li>
+      <li><span>Week&nbsp;7:</span> <a href="#" title="Coming soon">Capstone Planning</a></li>
+      <li><span>Week&nbsp;8:</span> <a href="#" title="Coming soon">Capstone Showcase</a></li>
+    </ol>
+  </section>
+
+  <footer>
+    © 2025 Hamsadvani Anand Kuganantham &nbsp;| Portfolio for the GRAPH Network “Generative AI for Work &amp; Research” Course
+  </footer>
+</body>
+</html>
